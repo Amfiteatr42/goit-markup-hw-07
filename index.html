@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
+<!-- УДАЛИТЬ КЛАССЫ .ЛИСТ !!!!!!!!!!-->
+
   <body>
     <header class="page-header">
       <!-- Главная навигация -->
       <div class="container main-nav">
         <nav class="main-nav">
-          <a class="main-nav__logo" href="./index.html"
-            >Web<span class="main-nav__logo--black">Studio</span></a
+          <a class="logo" href="./index.html"
+            >Web<span class="logo--black">Studio</span></a
           >
           <ul class="main-nav__menu list">
             <li class="main-nav__item">
@@ -41,6 +43,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="main-nav__contacts list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--grey" href="mailto:info@devstudio.com">
@@ -148,7 +151,6 @@
                   >Условия договора</a
                 >
               </label>
-
               <button class="modal__btn" type="submit">Отправить</button>
             </form>
           </div>
@@ -259,7 +261,7 @@
               />
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text">Product designer</p>
-              <ul class="socials list">
+              <ul class="socials team-socials list">
                 <li class="social__item">
                   <a class="social__link" href="">
                     <svg width="20" , height="20">
@@ -299,7 +301,7 @@
               />
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text">Frontend Developer</p>
-              <ul class="socials list">
+              <ul class="socials team-socials list">
                 <li class="social__item">
                   <a class="social__link" href="">
                     <svg width="20" , height="20">
@@ -339,7 +341,7 @@
               />
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
-              <ul class="socials list">
+              <ul class="socials team-socials list">
                 <li class="social__item">
                   <a class="social__link" href="">
                     <svg width="20" , height="20">
@@ -379,7 +381,7 @@
               />
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text">UI Designer</p>
-              <ul class="socials list">
+              <ul class="socials team-socials list">
                 <li class="social__item">
                   <a class="social__link" href="">
                     <svg width="20" , height="20">
@@ -470,8 +472,8 @@
       <!-- Адресс и контакты -->
       <div class="container footer__container">
         <div class="address">
-          <a class="main-nav__logo main-nav__logo--margin" href="./index.html"
-            >Web<span class="main-nav__logo--white">Studio</span></a
+          <a class="logo footer-logo" href="./index.html"
+            >Web<span class="logo--white">Studio</span></a
           >
           <address>
             <ul class="list">
@@ -498,31 +500,31 @@
           </address>
         </div>
         <div class="footer-socials">
-          <h2 class="socials-header">Присоединяйтесь</h2>
+          <h2 class="footer-socials__header">Присоединяйтесь</h2>
           <ul class="socials list">
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link social__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link social__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link social__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="">
+              <a class="social__link social__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -530,13 +532,13 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe-form">
-          <label for="email" class="socials-header"
+        <form class="subscribe">
+          <label for="email" class="footer-socials__header"
             >Подпишитесь на рассылку</label
           >
-          <div class="subscribe-box">
-            <input type="email" name="email" id="email" placeholder="E-mail" />
-            <button class="subscribe-btn" type="submit">Подписаться</button>
+          <div class="subscribe__box">
+            <input class="subscribe__input" type="email" name="email" id="email" placeholder="E-mail" />
+            <button class="subscribe__btn" type="submit">Подписаться</button>
           </div>
         </form>
       </div>

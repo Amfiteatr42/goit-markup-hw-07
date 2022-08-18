@@ -1,0 +1,37 @@
+body {
+  font-family: 'roboto', sans-serif;
+  color: $main-text-color;
+  letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--padding-bot {
+    padding-bottom: 0;
+  }
+
+  &--grey-background {
+    background-color: $background-color-grey;
+  }
+}
