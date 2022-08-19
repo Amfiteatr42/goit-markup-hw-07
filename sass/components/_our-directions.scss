@@ -1,0 +1,29 @@
+/* what do we do */
+
+.directions {
+  display: flex;
+}
+
+.directions__item {
+  position: relative;
+  font-size: 0;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.directions__overlay {
+  @include flexJA();
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}

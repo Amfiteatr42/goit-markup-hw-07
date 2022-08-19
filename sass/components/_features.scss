@@ -1,0 +1,37 @@
+/* features */
+
+.features {
+  display: flex;
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondary-text-color;
+}
+
+.features__items {
+  width: calc((100% - 30px * 3) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__icons {
+  @include flexJA();
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: $background-color-grey;
+}

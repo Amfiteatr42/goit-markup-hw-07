@@ -1,0 +1,114 @@
+.footer__container {
+  display: flex;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color-hero;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address__contacts {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $transition;
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.footer-socials__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $backrgound-color-white;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.socials__link--grey {
+  fill: $backrgound-color-white;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $backrgound-color-white;
+    }
+}
+
+/* subscribe */
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding-top: 12px;
+}
+
+.subscribe__box {
+  display: flex;
+}
+
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(33, 150, 243, 0);
+  padding-left: 16px;
+  color: #fff;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    &:placeholder-shown {
+      color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscribe__btn {
+  @extend %main-button;
+  @include flexJA();
+  margin-left: 12px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/icon-send.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 10px;
+    }
+}

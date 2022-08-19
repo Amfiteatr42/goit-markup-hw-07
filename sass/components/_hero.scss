@@ -16,6 +16,7 @@
   background-size: cover;
 }
 
+
 .hero__title {
   width: 696px;
   margin: 0 auto 30px;
@@ -28,3 +29,10 @@
   color: $backrgound-color-white;
 }
 
+.modal__btn {
+  @extend %main-button;
+
+  &:hover {
+    background-color: #188CE8;
+  }
+}

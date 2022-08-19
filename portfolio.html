@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="page-header">
@@ -284,59 +284,48 @@
       <!-- Адресс и контакты -->
       <div class="container footer__container">
         <div class="address">
-          <a class="logo footer-logo" href="./index.html"
-            >Web<span class="logo--white">Studio</span></a
-          >
+          <a class="logo footer-logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
           <address>
             <ul class="list">
               <li class="address__item">
-                <a
-                  class="address__contacts address__contacts--white"
-                  href="https://goo.gl/maps/XpMCneQjfJUhqdor6"
-                  target="_blank"
-                  rel="noopener noreferer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                <a class="address__contacts address__contacts--white" href="https://goo.gl/maps/XpMCneQjfJUhqdor6"
+                  target="_blank" rel="noopener noreferer">г. Киев, пр-т Леси Украинки, 26</a>
               </li>
               <li class="address__item">
-                <a class="address__contacts" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a class="address__contacts" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li>
-                <a class="address__contacts" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+                <a class="address__contacts" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer-socials">
-          <h2 class="footer-socials__header">Присоединяйтесь</h2>
+          <h2 class="footer-socials__title">Присоединяйтесь</h2>
           <ul class="socials list">
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--grey" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--grey" href="">
                 <svg width="20" , height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -345,17 +334,9 @@
           </ul>
         </div>
         <form class="subscribe">
-          <label for="email" class="footer-socials__header"
-            >Подпишитесь на рассылку</label
-          >
+          <label for="email" class="footer-socials__title">Подпишитесь на рассылку</label>
           <div class="subscribe__box">
-            <input
-              class="subscribe__input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
+            <input class="subscribe__input" type="email" name="email" id="email" placeholder="E-mail" />
             <button class="subscribe__btn" type="submit">Подписаться</button>
           </div>
         </form>
