@@ -33,8 +33,7 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -300,18 +299,6 @@ body {
 .modal__comment:focus {
   outline: 1px solid #2196F3;
 }
-.modal__comment::-moz-placeholder {
-  color: rgba(75, 75, 75, 0.5);
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
-.modal__comment:-ms-input-placeholder {
-  color: rgba(75, 75, 75, 0.5);
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
 .modal__comment::placeholder {
   color: rgba(75, 75, 75, 0.5);
   font-size: 12px;
@@ -347,9 +334,7 @@ body {
 }
 
 .modal__agreement-check {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .modal__agreement-check:checked ~ .modal__icon-checkbox {
@@ -593,26 +578,10 @@ body {
   padding-left: 16px;
   color: #fff;
 }
-.subscribe__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 1.25;
-}
-.subscribe__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 1.25;
-}
 .subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-}
-.subscribe__input:-moz-placeholder-shown {
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscribe__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
 }
 .subscribe__input:placeholder-shown {
   color: rgba(255, 255, 255, 0.6);
